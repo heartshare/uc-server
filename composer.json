@@ -11,5 +11,12 @@
     ],
     "require": {
         "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": { "UcenterServer": "src/" }
+    },
+    "require-dev": {
+        "johnkary/phpunit-speedtrap": "^1.0",
+        "phpunit/phpunit": "4.8.*"
     }
 }
