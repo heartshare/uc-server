@@ -1,6 +1,6 @@
 uc-server
 ===
-A library for implementing an Ucenter Server in php.
+A library for implementing an Ucenter Server in php. There's also a tiny implementation for Ucenter client on [labs7in0/uc_client](https://github.com/labs7in0/uc_client).
 
 ### Install
 
