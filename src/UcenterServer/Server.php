@@ -4,12 +4,14 @@ namespace UcenterServer;
 
 class Server
 {
-    public static function run($method, $action, $params)
+    public static function run($app, $action)
     {
-        if (in_array($m, ['app', 'frame', 'user', 'pm', 'pm_client', 'tag', 'feed', 'friend', 'domain', 'credit', 'mail', 'version'])) {
-            return $m;
+        $class = 'UcenterServer\\App\\' . (($app == 'pm_client') ? 'PmClient' : ucwords($app));
+        if (class_exists($class)) {
+            $model = new $class();
+            return $model->run($action);
         } else {
-            return 'Module not found!';
+            throw new \Exception('Model not found');
         }
     }
 }
