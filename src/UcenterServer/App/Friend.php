@@ -7,16 +7,11 @@ class Friend extends Base
     public function registerMethod()
     {
         $this->methods = [
-            'delete'   => 'onDelete',
             'add'      => 'onAdd',
-            'totalnum' => 'onTotalNum',
+            'delete'   => 'onDelete',
             'ls'       => 'onLs',
+            'totalnum' => 'onTotalNum',
         ];
-    }
-
-    public function onLs()
-    {
-        return null;
     }
 
     public function onAdd()
@@ -25,6 +20,11 @@ class Friend extends Base
     }
 
     public function onDelete()
+    {
+        return null;
+    }
+
+    public function onLs()
     {
         return null;
     }

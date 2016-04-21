@@ -7,18 +7,18 @@ class App extends Base
     public function registerMethod()
     {
         $this->methods = [
-            'ls'     => 'onLs',
             'add'    => 'onAdd',
+            'ls'     => 'onLs',
             'ucinfo' => 'onUcInfo',
         ];
     }
 
-    public function onLs()
+    public function onAdd()
     {
         return null;
     }
 
-    public function onAdd()
+    public function onLs()
     {
         return null;
     }

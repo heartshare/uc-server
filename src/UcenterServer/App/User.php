@@ -7,54 +7,24 @@ class User extends Base
     public function registerMethod()
     {
         $this->methods = [
-            'register'        => 'onRegister',
-            'login'           => 'onLogin',
-            'get_user'        => 'onGet',
-            'edit'            => 'onEdit',
-            'delete'          => 'onDelete',
-            'synlogin'        => 'onSynLogin',
-            'synlogout'       => 'onSynLogout',
+            'addprotected'    => 'onAddProtected',
             'check_email'     => 'onCheckEmail',
             'check_username'  => 'onCheckUsername',
-            'addprotected'    => 'onAddProtected',
+            'delete'          => 'onDelete',
             'deleteprotected' => 'onDeleteProtected',
+            'edit'            => 'onEdit',
+            'get_user'        => 'onGet',
             'getprotected'    => 'onGetProtected',
+            'login'           => 'onLogin',
             'merge'           => 'onMerge',
             'merge_remove'    => 'onUnMerge',
+            'register'        => 'onRegister',
+            'synlogin'        => 'onSynLogin',
+            'synlogout'       => 'onSynLogout',
         ];
     }
 
-    public function onRegister()
-    {
-        return null;
-    }
-
-    public function onLogin()
-    {
-        return null;
-    }
-
-    public function onGet()
-    {
-        return null;
-    }
-
-    public function onEdit()
-    {
-        return null;
-    }
-
-    public function onDelete()
-    {
-        return null;
-    }
-
-    public function onSynLogin()
-    {
-        return null;
-    }
-
-    public function onSynLogout()
+    public function onAddProtected()
     {
         return null;
     }
@@ -69,7 +39,7 @@ class User extends Base
         return null;
     }
 
-    public function onAddProtected()
+    public function onDelete()
     {
         return null;
     }
@@ -79,12 +49,42 @@ class User extends Base
         return null;
     }
 
+    public function onEdit()
+    {
+        return null;
+    }
+
+    public function onGet()
+    {
+        return null;
+    }
+
     public function onGetProtected()
     {
         return null;
     }
 
+    public function onLogin()
+    {
+        return null;
+    }
+
     public function onMerge()
+    {
+        return null;
+    }
+
+    public function onRegister()
+    {
+        return null;
+    }
+
+    public function onSynLogin()
+    {
+        return null;
+    }
+
+    public function onSynLogout()
     {
         return null;
     }
