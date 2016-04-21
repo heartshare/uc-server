@@ -1,0 +1,15 @@
+{
+    "name": "labs7in0/uc-server",
+    "description": "A library for implementing an Ucenter Server in php.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "7IN0SAN9",
+            "email": "me@7in0.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
